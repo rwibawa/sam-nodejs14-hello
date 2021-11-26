@@ -316,3 +316,36 @@ $ aws cloudformation list-stacks
 
 
 ```
+
+
+## 2. Use `VSCode` IDE
+* install the AWS extension
+
+### 2.1. Debugger.
+Create the `launch.json`, then run the debugger.
+![Debug](docs/img/Debug_01.jpg)
+
+### 2.2. Deploy the app.
+* Open the command pallette `ctl-shift-p`, then type `aws:`. Select *"AWS: Deploy SAM Application"*
+![DeployApp](docs/img/AWS-DeploySAMApp_03.jpg)
+* Select the template which is `template.yaml`
+![Select SAM Template](docs/img/AWS-DeploySAMApp_04.jpg)
+* Select the AWS Region. It's *"us-west-1"* in this case.
+![Select AWS Region](docs/img/AWS-DeploySAMApp_05.jpg)
+* Select the AWS S3 bucket or create a new one.
+![Select S3 bucket](docs/img/AWS-DeploySAMApp_06.jpg)
+* Press *'enter'* to confirm
+![Confirm](docs/img/AWS-DeploySAMApp_07.jpg)
+* Successful deployment will show the url to access the api in the *OUTPUT* window:
+![Lambda API](docs/img/AWS-DeploySAMApp_02.jpg)
+
+### 2.3. Run Unit Tests.
+```sh
+$ cd hello-world/
+$ npm i
+```
+
+* Open the command pallette `ctl-shift-p`. Select *"Explorer: Focus on NPM Scripts View*
+![DeployApp](docs/img/Run-Unit-Tests_01.jpg)
+* Go to *NPM SCRIPTS* window and run the *test-hello-world*
+![Run unit tests](docs/img/Run-Unit-Tests_02.jpg)
