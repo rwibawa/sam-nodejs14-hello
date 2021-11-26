@@ -349,3 +349,20 @@ $ npm i
 ![DeployApp](docs/img/Run-Unit-Tests_01.jpg)
 * Go to *NPM SCRIPTS* window and run the *test-hello-world*
 ![Run unit tests](docs/img/Run-Unit-Tests_02.jpg)
+
+### 2.4. Invoke on AWS.
+* Open the *AWS Extension*
+* Select the API in Explorer > Region > API Gateway
+* `right-click` and select *"Invoke on AWS"
+* Select the resource, select the method, then click the *Invoke* button.
+* See the output on the *OUTPUT* window.
+
+![Invoke on AWS](docs/img/Invoke%20on%20AWS.jpg)
+
+### 2.5. Clean up.
+* Open the *AWS Extension*
+* Select the stack in Explorer > Region > CloudFormation
+* `right-click` and select *"Delete CloudFormation Stack"
+* See the output on the *OUTPUT* window.
+
+![Clean Up](docs/img/Delete-The-Stack.jpg)
